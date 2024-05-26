@@ -30,7 +30,7 @@ A **News Management System (NMS)** is a software application that helps universi
 - **View personal news history**
 
 ## 5. Demo Videos
-
+- Click the image to see demo video !
 ## [![DemoVideo](https://drive.google.com/uc?id=1k4Fvpy5esAiC7Qwe7VBG9CUBbovTwXv4)](https://drive.google.com/file/d/1EB2xa6u5P0wjefGI-wZibam_oNrliaC-/view?usp=sharing)
 
 ---
