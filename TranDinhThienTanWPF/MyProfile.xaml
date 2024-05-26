@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="TranDinhThienTanWPF.MyProfile"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Height="390" Width="900">
+    <Border  Background="#FF33446C" CornerRadius="10" Margin="0 0" Height="300" Width="600" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid Margin="0 20 0 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="6*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" >
+                <Ellipse Width="200" Height="200" Stroke="White" StrokeThickness="2">
+                    <Ellipse.Fill>
+                        <ImageBrush ImageSource="D:\TaiLieuHocTap\FPT-University\SEMESTER_6\AMA_ASP-.NET-CORE-WEB-API\TranDinhThienTan_NET1705_A01.sln\TranDinhThienTanWPF\Public\download.jpg" Stretch="UniformToFill"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Label x:Name="Role" Margin="0 20 0 0" Content="Role: " HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15" FontFamily="Arial Black" Foreground="#FFFFF7F7"/>
+            </StackPanel>
+            <Grid Grid.Column="1" VerticalAlignment="Center" Margin="0 0 0 60">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Account Name -->
+                <TextBlock Text="Account Name:" VerticalAlignment="Center" Margin="5" FontFamily="Arial Black" Foreground="#FFFFF7F7"/>
+                <TextBox x:Name="AccountNameTextBox" Grid.Column="1" Padding="5" Margin="5 15" Width="200" VerticalAlignment="Center" HorizontalAlignment="Left" IsReadOnly="true"/>
+
+                <!-- Account Email -->
+                <TextBlock Text="Account Email:" Grid.Row="1" VerticalAlignment="Center" Margin="5 0 5 15" FontFamily="Arial Black" Foreground="#FFFFF7F7"/>
+                <TextBox x:Name="AccountEmailTextBox" Grid.Column="1" Grid.Row="1" Padding="5" Margin="5 0 5 15" Width="200" VerticalAlignment="Center" HorizontalAlignment="Left" IsReadOnly="true"/>
+
+                <!-- Account Password -->
+                <TextBlock Text="Account Password:" Grid.Row="2" VerticalAlignment="Center" Margin="5 0 5 15" FontFamily="Arial Black" Foreground="#FFFFF7F7"/>
+                <PasswordBox x:Name="AccountPasswordBox" Grid.Column="1" Grid.Row="2" Padding="5" Margin="5 0 5 15" Width="200" VerticalAlignment="Center" HorizontalAlignment="Left" IsEnabled="False"/>
+
+                <!-- Save Button -->
+                <Button x:Name="btnEdit"  Content="Edit" Grid.Row="3" Grid.Column="0" Padding="0 5" HorizontalAlignment="Left" Width="120" Margin="0,5,0,5" Click="EditButton_Click"/>
+                <Button  Content="Save" Grid.Row="3" Grid.Column="1" Padding="0 5" HorizontalAlignment="Left" Width="205" Margin="0,5,0,5" Click="SaveButton_Click"/>
+            </Grid>
+        </Grid>
+    </Border>
+
+</UserControl>
