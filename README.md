@@ -31,6 +31,6 @@ A **News Management System (NMS)** is a software application that helps universi
 
 ## 5. Demo Videos
 
-## ![DemoVideo]()
+## ![DemoVideo](https://drive.google.com/uc?id=1EB2xa6u5P0wjefGI-wZibam_oNrliaC-)
 
 ---
